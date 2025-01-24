@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube Fullscreen Control Hider",
+    "version": "1.0",
+    "description": "Toggle the visibility of YouTube fullscreen video controls and title using a shortcut.",
+    "permissions": ["scripting", "activeTab"],
+    "host_permissions": ["https://www.youtube.com/*"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "commands": {
+      "toggle-controls": {
+        "suggested_key": {
+          "default": "Ctrl+Shift+Y"
+        },
+        "description": "Toggle video title and controls visibility"
+      }
+    },
+    "icons": {
+    "16": "icon-16.png",
+    "48": "icon-48.png",
+    "128": "icon-128.png"
+    }
+  }
